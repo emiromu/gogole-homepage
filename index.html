@@ -1,40 +1,97 @@
 <!DOCTYPE html>
 <style>
-    #logo{
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-left: auto;
-        padding-right: auto;
-        text-align: center;
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    #more{
+        width:20px;
+        height:20px;
+
+    }
+
+    #more:hover{
+        background-color: blue;
     }
 
     .container{
         display: grid;
-        grid-template-columns: 250px 250px;
+        grid-template-columns: 50% 50%;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 
     .dright{
         text-align: right;
+        padding-right: 1em;
     }
     .dleft{
         text-align: left;
+        padding-left: 1em;
+    }
+
+    .centerpage{
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #logo{
+        display: block;
+        margin: auto;
+        padding-bottom: 25px;
+    }
+
+    .searchbox{
+        display: block;
+        margin: auto;
+        width: 600px;
+        height: 40px;
+        border-radius: 20px;
+        border-color: #e8e8e8;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    #searchbar{
+        width: 80%;
+        height: 60%;
+        margin: auto;
+        padding: auto;
+        
+
     }
 
 </style>
 <html lang="en">
 <head>
 <meta charset="UFT-8">
-<title>Google Homepage</title>
+<title>Gogole</title>
 </head>
 <body>
 
 <div class="container">
-<div class="dleft">About Store </div>  
-<div class="dright">Gmail Images ::<button>Sign in</button></div>
+<div class="dleft">
+    <a href="about.html">About</a>
+    <a href="store.html">Store</a>
+</div>  
+<div class="dright">
+    <a href="gmail.html">Gmail</a>
+    <a href="images.html">Images</a>
+    <a href="more.html"><img id="more" src="\media\more.png"></a>
+    <button>Sign in</button></div>
 </div>
 
-<div>
-<img id="logo" src="\media\gogole.png">
+<div class="centerpage">
+    <img id="logo" src="\media\gogole.png">
+</div>
+<div class="searchbox">
+<input id="searchbar" type="text">
 </div>
 
 </body>
