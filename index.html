@@ -67,6 +67,32 @@
 
     }
 
+    .bottompage{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width:100%;
+        height:100px;
+    }
+
+    .drightbot{
+        text-align: right;
+        padding-right: 1em;
+        padding-top: 20px;
+        height: 100%;
+        background-color: #e8e8e8;
+    }
+    .dleftbot{
+        text-align: left;
+        padding-left: 1em;
+        padding-top: 20px;
+        height: 100%;
+        background-color: #e8e8e8;
+    }
+
 </style>
 <html lang="en">
 <head>
@@ -74,17 +100,17 @@
 <title>Gogole</title>
 </head>
 <body>
-
+<br>
 <div class="container">
 <div class="dleft">
-    <a href="about.html">About</a>
-    <a href="store.html">Store</a>
+    <a href="about.html">Abuot</a>
+    <a href="store.html">Storr</a>
 </div>  
 <div class="dright">
-    <a href="gmail.html">Gmail</a>
-    <a href="images.html">Images</a>
+    <a href="gmail.html">Gmeil</a>
+    <a href="images.html">Imagez</a>
     <a href="more.html"><img id="more" src="\media\more.png"></a>
-    <button>Sign in</button></div>
+    <button>Sain in</button></div>
 </div>
 
 <div class="centerpage">
@@ -92,6 +118,27 @@
 </div>
 <div class="searchbox">
 <input id="searchbar" type="text">
+</div>
+
+<div class="bottompage">
+    <div class="dleftbot">
+        <p style="color:gray; display:inline; padding-left:10px; padding-right:10px;">Countree</p>
+        <hr>
+    </div>  
+    <div class="drightbot">
+        <br>
+        <hr>
+    </div>
+    <div class="dleftbot">
+        <a href="advertising.html"><p style="color:gray; display:inline; padding-left:10px; padding-right:10px;">Advortizing</p></a>
+        <a href="business.html"><p style="color:gray; display:inline; padding-left:10px; padding-right:10px;">Bizness</p></a>
+        <a href="howsearchworks.html"><p style="color:gray; display:inline; padding-left:10px; padding-right:10px;">How sarch werks</p></a>
+    </div>  
+    <div class="drightbot">
+        <a href="privacy.html"><p style="color:gray; display:inline; padding-left:10px; padding-right:10px;">Pirvacy</p></a>
+        <a href="terms.html"><p style="color:gray; display:inline; padding-left:10px; padding-right:10px;">Terrms</p></a>
+        <a href="settings.html"><p style="color:gray; display:inline; padding-left:10px; padding-right:10px;">Settngs</p></a>
+    </div>
 </div>
 
 </body>
