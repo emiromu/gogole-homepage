@@ -11,6 +11,7 @@
     }
 
     #more{
+        
         width:26px;
         height:26px;
         padding-left:5px; 
@@ -18,6 +19,13 @@
         padding-top:5px;
         padding-bottom:5px;
         border-radius: 20px;
+        max-height: 100%;
+        max-width: 100%;
+        position: relative;
+        top: 10px;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
     #more:hover{
@@ -28,21 +36,23 @@
         display: grid;
         grid-template-columns: 50% 50%;
         padding-bottom: 1em;
+
+        height: 50px; 
+        width: 100%;
+        position: relative;
+        top: 0;
+        
     }
 
     .dright{
         text-align: right;
-        padding-right: 1em;
-        background-color: pink;
+        padding-right: 0.5em;
         line-height: 60px;
-
     }
     .dleft{
         text-align: left;
-        padding-left: 1em;
-        background-color: red;
-        line-height: 60px;
-        
+        padding-left: 0.5em;
+        line-height: 60px;     
     }
 
     .centerpage{
@@ -152,7 +162,7 @@
     <a href="gmail.html"><p style="padding-left:10px; padding-right:10px;display:inline;">Gmeil</p></a>
     <a href="images.html"><p style="padding-left:10px; padding-right:10px;display:inline;">Imagez</p></a>
     <a href="more.html"><img id="more" src="\media\more.png"></a>
-    <button id="signin"><p style="color: white; display:inline;">Sain in</p></button></div>
+    <button id="signin" style="margin-left:5px;"><p style="color: white; display:inline;">Sain in</p></button></div>
 </div>
 
 <div class="centerpage">
