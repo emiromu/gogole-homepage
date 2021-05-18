@@ -11,31 +11,38 @@
     }
 
     #more{
-        width:20px;
-        height:20px;
-        padding-left:10px; 
-        padding-right:10px;
-
+        width:26px;
+        height:26px;
+        padding-left:5px; 
+        padding-right:5px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-radius: 20px;
     }
 
     #more:hover{
-        background-color: #5789e6;
+        background-color: #c0cde4;
     }
 
     .container{
         display: grid;
         grid-template-columns: 50% 50%;
-        padding-top: 1em;
         padding-bottom: 1em;
     }
 
     .dright{
         text-align: right;
         padding-right: 1em;
+        background-color: pink;
+        line-height: 60px;
+
     }
     .dleft{
         text-align: left;
         padding-left: 1em;
+        background-color: red;
+        line-height: 60px;
+        
     }
 
     .centerpage{
@@ -93,6 +100,42 @@
         background-color: #e8e8e8;
     }
 
+    .actionbutton{
+        border: none; 
+        background-color: #f0f0f0;
+        height: 30px;
+        width: 120px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .actionbutton:hover{
+        border-style: solid;
+        border-width: 1px;
+        border-color: gray;
+    }
+
+    #actioncontainer{
+        display: block;
+        margin: auto;
+        width: 20%;
+        padding-top: 20px;
+    }
+
+    #signin{
+        background-color:#5789e6; 
+        border-radius:5px;
+        padding-left:10px; 
+        padding-right:10px; 
+        height:40px; 
+        width:100px;
+    }
+    
+    #signin:hover{
+        box-shadow: 0 0 5px rgba(33,33,33,.2); 
+        background-color: #7da3e8;
+    }
+
 </style>
 <html lang="en">
 <head>
@@ -109,7 +152,7 @@
     <a href="gmail.html"><p style="padding-left:10px; padding-right:10px;display:inline;">Gmeil</p></a>
     <a href="images.html"><p style="padding-left:10px; padding-right:10px;display:inline;">Imagez</p></a>
     <a href="more.html"><img id="more" src="\media\more.png"></a>
-    <button style="background-color:#5789e6; border-radius:5px;padding-left:10px; padding-right:10px; height:40px; width:100px;">Sain in</button></div>
+    <button id="signin"><p style="color: white; display:inline;">Sain in</p></button></div>
 </div>
 
 <div class="centerpage">
@@ -117,6 +160,10 @@
 </div>
 <div class="searchbox">
 <input id="searchbar" type="text">
+</div>
+<div id="actioncontainer">
+<button class="actionbutton">Gogole Serch</button>
+<button class="actionbutton">Am feling locky</button>
 </div>
 
 <div class="bottompage">
