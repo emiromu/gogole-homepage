@@ -67,22 +67,75 @@
     }
 
     .searchbox{
-        display: block;
+
         margin: auto;
-        width: 600px;
+        width: 550px;
         height: 40px;
-        border-radius: 20px;
+        padding-top:10px;
+        padding-left:30px;
+        padding-right:30px;
+        border-radius: 50px;
         border-color: #e8e8e8;
         border-width: 1px;
         border-style: solid;
     }
 
-    #searchbar{
-        width: 80%;
-        height: 60%;
-        margin: auto;
-        padding: auto;     
+    .searchbox:hover{
+        box-shadow: 0 0 5px rgba(33,33,33,.2); 
     }
+
+    #searchbar{
+        width: 84%;
+        height: 60%;  
+        margin: auto;
+        border-style: none;
+    }
+
+    #searchbar:focus{
+        outline-width: 0;
+        border-style:none;
+    }
+
+    .inlogobutton{
+        margin: auto;
+        padding: auto;   
+
+    }
+
+    .inlogo{
+        height:20px;
+        width:20px;
+    }
+
+    /* Tooltip container */
+        .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+    }
+    
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+
 
     .bottompage{
         display: grid;
@@ -146,6 +199,8 @@
         background-color: #7da3e8;
     }
 
+
+
 </style>
 <html lang="en">
 <head>
@@ -169,8 +224,14 @@
     <img id="logo" src="\media\gogole.png">
 </div>
 <div class="searchbox">
+<button id="magnifier" class="inlogobutton"><img class="inlogo" src="\media\magnifier.png"></button>
 <input id="searchbar" type="text">
+<div class="tooltip">
+<button id="microphone" class="inlogobutton"><img  class="inlogo" src="\media\microphone.png"></button>
+<span class="tooltiptext">Serch by vois</span>
 </div>
+</div>
+
 <div id="actioncontainer">
 <button class="actionbutton">Gogole Serch</button>
 <button class="actionbutton">Am feling locky</button>
